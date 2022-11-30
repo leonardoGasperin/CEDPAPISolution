@@ -16,7 +16,6 @@ namespace CEDPAPI.Models
         [Column("Requisitos")]
         public string? Requisite { get; set; }
 
-        [StringLength(150)]
         [Column("Carga Horária")]
         public int? Workload { get; set; }
 
