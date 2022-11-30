@@ -5,7 +5,6 @@ namespace CEDPAPI.Models
     [Table("Turmos")]
     public class GradeEntity
     {
-        [Column("Id do Estudante")]
         public int Id { get; set; }
 
         [ForeignKey("InstructorEntity")]

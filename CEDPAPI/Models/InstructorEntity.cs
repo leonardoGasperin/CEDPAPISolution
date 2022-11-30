@@ -6,7 +6,6 @@ namespace CEDPAPI.Models
     [Table("Instrutores")]
     public class InstructorEntity
     {
-        [Column("Id do Instrutor")]
         public int Id { get; set; }
         
         [StringLength(150)]

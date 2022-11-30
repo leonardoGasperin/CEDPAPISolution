@@ -6,7 +6,6 @@ namespace CEDPAPI.Models
     [Table("Alunos")]
     public class StudentEntity
     {
-        [Column("Id")]
         public int Id { get; set; }
         [StringLength(15), Column("CPF")]
         public string Cpf { get; set; }
@@ -17,6 +16,6 @@ namespace CEDPAPI.Models
         [StringLength(14), Column("Telefone")]
         public string Phone { get; set; }
         [Column("Data de nascimento")]
-        public DateOnly? Birthdate { get; set; }
+        public DateTime? Birthdate { get; set; }
     }
 }

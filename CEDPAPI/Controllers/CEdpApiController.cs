@@ -29,7 +29,7 @@ namespace CEDPAPI.Controllers
         [HttpPost]
         public RegistrationEntity Post(RegistrationEntity value)
         {
-            _context.teste.Add(value);
+            _context.Registrations.Add(value);
             _context.SaveChanges();
             return value;
         }

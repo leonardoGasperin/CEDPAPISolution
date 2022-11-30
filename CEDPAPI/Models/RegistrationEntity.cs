@@ -5,7 +5,6 @@ namespace CEDPAPI.Models
     [Table("Matrículas")]
     public class RegistrationEntity
     {
-        [Column("Id da Matrícula")]
         public int Id { get; set; }
         
         [Column("Id da Turma")]
@@ -15,6 +14,6 @@ namespace CEDPAPI.Models
         public int IdStudent { get; set; }
         
         [Column("Data de Matrícula")]
-        public DateOnly? RegisterDate { get; set; }
+        public DateTime? RegisterDate { get; set; }
     }
 }
